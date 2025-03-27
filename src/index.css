@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 26 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 9%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 26 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 26 100% 50%;
+
+    --radius: 0.75rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans overflow-x-hidden;
+  }
+
+  /* Custom cursor styles */
+  body.custom-cursor * {
+    cursor: none !important;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-sm;
+  }
+  
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-24;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-display font-bold tracking-tight mb-8 opacity-0 animate-slide-up;
+    animation-delay: 100ms;
+    animation-fill-mode: both;
+  }
+  
+  .section-subtitle {
+    @apply text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 opacity-0 animate-slide-up;
+    animation-delay: 200ms;
+    animation-fill-mode: both;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors 
+    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 
+    disabled:opacity-50 disabled:pointer-events-none ring-offset-background
+    bg-moodale-orange text-white hover:bg-moodale-orange/90 h-11 px-6 py-2 shadow-md;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors 
+    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 
+    disabled:opacity-50 disabled:pointer-events-none ring-offset-background
+    border border-input bg-moodale-black text-white hover:bg-moodale-black/90 h-11 px-6 py-2;
+  }
+
+  .feature-card {
+    @apply p-6 border border-border rounded-xl shadow-sm bg-white/60 backdrop-blur-sm
+    transition-all duration-300 hover:shadow-md hover:translate-y-[-5px] opacity-0 animate-fade-in;
+  }
+
+  .testimonial-card {
+    @apply p-6 border border-border rounded-xl shadow-sm bg-white/60 backdrop-blur-sm opacity-0 animate-fade-in;
+  }
+
+  .team-member-card {
+    @apply flex flex-col items-center p-6 rounded-xl opacity-0 animate-scale-in;
+  }
+
+  .contact-form-input {
+    @apply block w-full rounded-md border border-input bg-background px-4 py-3 text-foreground 
+    shadow-sm focus:border-moodale-orange focus:ring-1 focus:ring-moodale-orange transition-all duration-200;
+  }
+
+  .animate-stagger > * {
+    opacity: 0;
+    animation: fade-in 0.5s ease-out forwards;
+  }
+
+  .animate-stagger > *:nth-child(1) { animation-delay: 100ms; }
+  .animate-stagger > *:nth-child(2) { animation-delay: 200ms; }
+  .animate-stagger > *:nth-child(3) { animation-delay: 300ms; }
+  .animate-stagger > *:nth-child(4) { animation-delay: 400ms; }
+  .animate-stagger > *:nth-child(5) { animation-delay: 500ms; }
+  .animate-stagger > *:nth-child(6) { animation-delay: 600ms; }
+  .animate-stagger > *:nth-child(7) { animation-delay: 700ms; }
+  .animate-stagger > *:nth-child(8) { animation-delay: 800ms; }
+}
+
