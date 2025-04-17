@@ -11,30 +11,23 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       quote:
-        "Moodale transformed our online presence. Our website traffic increased by 180% within just three months of implementing their SEO strategy.",
-      author: "Sarah Johnson",
-      role: "CEO, TechInnovate",
+        "Working with Moodale has significantly boosted our online presence. Their strategic approach and consistent results have been invaluable to Navdrishti Group.",
+      author: "Sanjay Singhal",
+      role: "Director, Navdrishti Group",
       rating: 5
     },
     {
       quote:
-        "The social media campaign designed by Moodale exceeded our expectations. We saw a 65% increase in engagement and a significant boost in brand awareness.",
-      author: "Michael Chen",
-      role: "Marketing Director, GrowthFusion",
+        "Thanks to Moodale, our café has seen a noticeable increase in footfall and online engagement.",
+      // author: "Michael Chen",
+      role: "Founder, Make My Day Cafe",
       rating: 5
     },
     {
       quote:
-        "Working with Moodale has been a game-changer for our e-commerce business. Their data-driven approach helped us optimize our ad spend and increase our conversion rate by 40%.",
-      author: "Emma Rodriguez",
-      role: "Founder, StyleCraft",
-      rating: 5
-    },
-    {
-      quote:
-        "The team at Moodale took the time to understand our unique challenges and created a tailored content strategy that resonated with our audience. The results speak for themselves.",
-      author: "David Thompson",
-      role: "COO, HealthPlus",
+        "Working with Moodale has been a game-changer for our cafe business. Their data-driven approach helped us optimize our ad spend and increase our conversion rate significantly.",
+      
+      role: "Founder, Rocky's Cafe",
       rating: 5
     }
   ];
@@ -201,10 +194,10 @@ const TestimonialsSection = () => {
             className="mt-16 backdrop-blur-xl bg-white/5 border border-white/10 rounded-xl p-8 max-w-4xl mx-auto"
           >
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              <AnimatedStat value={180} label="Traffic Increase" symbol="%" delay={0} />
-              <AnimatedStat value={65} label="Engagement Growth" symbol="%" delay={1} />
-              <AnimatedStat value={40} label="Conversion Rate" symbol="%" delay={2} />
-              <AnimatedStat value={92} label="Client Satisfaction" symbol="%" delay={3} />
+              <AnimatedStat value={550} label="Happy Clients" symbol="+" delay={0} />
+              <AnimatedStat value={650} label="Projects Delivered" symbol="+" delay={1} />
+              <AnimatedStat value={25} label="Specialists" symbol="+" delay={2} />
+              <AnimatedStat value={6} label="Years of operation" symbol="+" delay={3} />
             </div>
           </motion.div>
         </div>

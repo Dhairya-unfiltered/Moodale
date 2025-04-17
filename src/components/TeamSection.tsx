@@ -9,23 +9,23 @@ const TeamSection = () => {
 
   const teamMembers = [
     {
-      name: 'Alex Morgan',
+      name: 'Mridul Agrawal',
       role: 'Founder & CEO',
-      bio: 'Digital marketing strategist with over 15 years of experience helping businesses grow online.'
+      bio: 'Marketing strategist with over 4 years of experience helping businesses grow online.'
     },
     {
-      name: 'Samantha Wu',
+      name: 'Parth Kothawade',
       role: 'SEO Specialist',
       bio: 'Search engine optimization expert focused on driving organic traffic and improving rankings.'
     },
     {
-      name: 'James Parker',
-      role: 'Content Director',
-      bio: 'Skilled content creator and strategist specializing in engaging, conversion-focused content.'
+      name: 'Dhairya Shah',
+      role: 'Frontend Developer',
+      bio: 'Skilled Web developer with a love for technology.'
     },
     {
-      name: 'Olivia Chen',
-      role: 'Social Media Manager',
+      name: 'Henil Diwan',
+      role: 'Frontend Developer',
       bio: 'Social media expert with a passion for creating viral campaigns and growing online communities.'
     }
   ];

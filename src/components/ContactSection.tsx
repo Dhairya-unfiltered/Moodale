@@ -21,7 +21,7 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
   
-    const whatsappNumber = "+919484665330"; 
+    const whatsappNumber = "+917983738443"; 
     const message = `New Inquiry from Website:\n\nName: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\nMessage: ${formData.message}`;
   
     const encodedMessage = encodeURIComponent(message);
@@ -59,8 +59,8 @@ const ContactSection = () => {
     },
     {
       icon: <MapPin className="h-5 w-5 text-primary" />,
-      title: 'Visit Us',
-      info: 'VIT, Vellore',
+      title: 'Office',
+      info: 'Bangalore, Karnataka',
       link: '#'
     }
   ];
@@ -187,11 +187,12 @@ const ContactSection = () => {
                 <div className="p-3 rounded-full bg-primary/10 mr-4">
                   <MessageSquare className="h-5 w-5 text-primary" />
                 </div>
+                <a  href="https://wa.me/7983738443" target="_blank">
                 <div>
-                  <h3 className="text-lg font-medium mb-1">Live Chat</h3>
-                  <p className="text-muted-foreground mb-3">Chat with our team in real-time</p>
-                  
+                  <h3 className="text-lg font-medium mb-1">Chat with us</h3>
+                  <p className="text-muted-foreground mb-3">Message us on WhatsApp — we’ll reply within 12 hours.</p>
                 </div>
+                </a>
               </div>
             </div>
           </div>

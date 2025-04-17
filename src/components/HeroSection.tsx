@@ -150,7 +150,7 @@ const HeroSection = () => {
             variants={item}
             className="text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-2xl mx-auto mb-8"
           >
-            We craft tailored digital marketing strategies to boost your online visibility and drive measurable results.
+            We craft tailored marketing strategies to boost your online visibility and drive measurable results.
           </motion.p>
           
           <motion.div 
@@ -197,7 +197,7 @@ const HeroSection = () => {
             variants={container}
             className="flex flex-wrap justify-center gap-6 md:gap-10"
           >
-            {["SEO Optimization", "Social Media Marketing", "Content Strategy", "PPC Advertising"].map((service, index) => (
+            {["Social Media Management","Lead Generation", "Graphic Designing","Branding" ].map((service, index) => (
               <motion.div
                 key={index}
                 variants={item}
@@ -205,7 +205,7 @@ const HeroSection = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6 + index * 0.1 }}
-                className="bg-white/10 backdrop-blur-sm shadow-sm px-6 py-3 rounded-full text-sm font-medium border border-white/10"
+                className="md:w-auto bg-white/10 backdrop-blur-sm shadow-sm px-6 py-3 rounded-full text-sm font-medium border border-white/10"
               >
                 <span className="text-white">{service}</span>
               </motion.div>

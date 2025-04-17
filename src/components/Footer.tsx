@@ -16,9 +16,9 @@ const Footer = () => {
     {
       title: 'Company',
       links: [
-        { name: 'About Us', href: '#' },
+        { name: 'About Us', href: '#services' },
         { name: 'Our Team', href: '#team' },
-        { name: 'Careers', href: '#' },
+        { name: 'Careers', href: '#contact' },
         { name: 'Contact', href: '#contact' }
       ]
     },
@@ -49,24 +49,10 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
-              We help businesses increase their online visibility through customized digital marketing strategies that deliver measurable results.
+              We help businesses increase their online visibility through customized marketing strategies that deliver measurable results.
             </p>
             <div className="flex space-x-4">
-              <a
-                href="#"
-                className="p-2 rounded-full border border-gray-700 hover:bg-gray-800 transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="p-2 rounded-full border border-gray-700 hover:bg-gray-800 transition-colors"
-                aria-label="Twitter"
-                target='_blank'
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
+           
               <a
                 href="https://www.instagram.com/moodale_/"
                 className="p-2 rounded-full border border-gray-700 hover:bg-gray-800 transition-colors"
@@ -82,6 +68,20 @@ const Footer = () => {
                 target='_blank'
               >
                 <Linkedin className="h-5 w-5" />
+              </a>
+              <a
+                href="#"
+                className="p-2 rounded-full border border-gray-700 hover:bg-gray-800 transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a
+                href="#"
+                className="p-2 rounded-full border border-gray-700 hover:bg-gray-800 transition-colors"
+                aria-label="Twitter"
+              >
+                <Twitter className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -108,7 +108,7 @@ const Footer = () => {
         <div className="mt-16 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-500 mb-4 md:mb-0">
-              © {currentYear} Moodale. All rights reserved.
+              © 2020 Moodale. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm text-gray-500">
               <a href="#" className="hover:text-moodale-orange transition-colors">
